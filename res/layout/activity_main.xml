@@ -1,0 +1,92 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:orientation="vertical">
+
+
+<TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        android:text="Войдите в учетную запись" />
+
+<LinearLayout
+android:orientation="horizontal"
+android:layout_height="wrap_content"
+android:layout_width="match_parent">
+
+<TextView
+        android:id="@+id/text_from"
+        android:layout_width="30pt"
+        android:layout_height="15pt"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        android:text="Логин:" />
+
+<EditText
+android:id="@+id/textone"
+android:layout_height="15pt"
+android:layout_width="50pt"
+android:hint="имя"/>
+
+</LinearLayout>
+
+
+<LinearLayout
+android:orientation="horizontal"
+android:layout_height="wrap_content"
+android:layout_width="match_parent">
+
+<TextView
+        android:id="@+id/text_from2"
+        android:layout_width="30pt"
+        android:layout_height="15pt"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        android:text="Паряль:" />
+
+<EditText
+android:id="@+id/texttwo"
+android:layout_height="15pt"
+android:layout_width="50pt"
+android:hint="пароль"/>
+
+
+</LinearLayout>
+
+
+<LinearLayout
+android:orientation="horizontal"
+android:layout_height="wrap_content"
+android:layout_width="match_parent">
+
+<Button
+android:id="@+id/button4"
+android:layout_width="wrap_content"
+android:layout_height="18pt"
+android:layout_weight="0"
+android:text="Войти"
+android:onClick="sendlog"/>
+<Button
+android:id="@+id/button5"
+android:layout_width="wrap_content"
+android:layout_height="18pt"
+android:layout_weight="0"
+android:text="Регистрация"
+android:onClick="rglog"/>
+
+</LinearLayout>
+
+
+<TextView
+        android:id="@+id/t_output"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        android:text=" " />
+
+
+</LinearLayout>

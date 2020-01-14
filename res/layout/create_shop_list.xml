@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <TextView 
+ 	android:id="@+id/textViewCSL0" 
+ 	android:layout_width="wrap_content" 
+ 	android:layout_height="wrap_content" 
+ 	android:text="Создание списка покупок от "> 
+	</TextView>
+    
+    <TextView 
+ 	android:id="@+id/textViewCSL1" 
+ 	android:layout_width="wrap_content" 
+ 	android:layout_height="wrap_content" 
+ 	android:text=" "> 
+	</TextView>
+	
+<LinearLayout
+android:orientation="horizontal"
+android:layout_height="wrap_content"
+android:layout_width="match_parent">
+
+	<TextView 
+ 	android:id="@+id/textViewCSL2" 
+ 	android:layout_width="wrap_content" 
+ 	android:layout_height="wrap_content" 
+ 	android:text="Название списка: "> 
+	</TextView>
+	
+	<EditText
+	android:id="@+id/edit_title"
+	android:layout_height="15pt"
+	android:layout_width="50pt"
+	android:hint=""/>
+
+</LinearLayout>
+
+<LinearLayout
+android:orientation="horizontal"
+android:layout_height="wrap_content"
+android:layout_width="match_parent">
+
+	<TextView 
+ 	android:id="@+id/textViewCSL4" 
+ 	android:layout_width="wrap_content" 
+ 	android:layout_height="wrap_content" 
+ 	android:text="Первый товар списка: "> 
+	</TextView>
+	
+	<EditText
+	android:id="@+id/edit_good"
+	android:layout_height="15pt"
+	android:layout_width="50pt"
+	android:hint=""/>
+
+</LinearLayout>
+
+<LinearLayout
+android:orientation="horizontal"
+android:layout_height="wrap_content"
+android:layout_width="match_parent">
+
+	<Button
+	android:id="@+id/create_bt"
+	android:layout_width="wrap_content"
+	android:layout_height="18pt"
+	android:layout_weight="0"
+	android:text="Создать список"
+	android:onClick="createlist"/>
+
+</LinearLayout>
+
+<LinearLayout
+android:orientation="horizontal"
+android:layout_height="wrap_content"
+android:layout_width="match_parent">
+
+	<TextView 
+ 	android:id="@+id/textViewCSL5" 
+ 	android:layout_width="wrap_content" 
+ 	android:layout_height="wrap_content" 
+ 	android:text=" "> 
+	</TextView>
+
+</LinearLayout>
+    
+
+</LinearLayout>

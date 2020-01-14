@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.firstandroidapp"
+    android:versionCode="1"
+    android:versionName="1.0" >
+    
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="14" />
+
+    <application
+        android:name="com.activeandroid.app.Application"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        
+        <meta-data
+            android:name="AA_DB_NAME"
+            android:value="Mydb7.db" />
+        <meta-data
+            android:name="AA_DB_VERSION"
+            android:value="1" />
+        
+        <activity
+            android:name="com.example.firstandroidapp.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+         <intent-filter>
+    		<action android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED" />
+  		</intent-filter>
+  		<meta-data
+      	android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED" 
+      	android:resource="@xml/device_filter" />   
+        </activity>
+        <activity
+            android:name="com.example.firstandroidapp.SecActivity"
+            android:label="@string/title_activity_sec"
+            android:parentActivityName="com.example.firstandroidapp.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.firstandroidapp.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.example.firstandroidapp.ShopList"
+            android:label="@string/title_shop_list"
+            android:parentActivityName="com.example.firstandroidapp.SecActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.firstandroidapp.SecActivity" />
+        </activity>
+        <activity
+            android:name="com.example.firstandroidapp.CreateShopList"
+            android:label="@string/title_create_shop_list"
+            android:parentActivityName="com.example.firstandroidapp.SecActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.firstandroidapp.SecActivity" />
+        </activity>
+        <activity
+            android:name="com.example.firstandroidapp.GoodInfo"
+            android:label="@string/title_good_info"
+            android:parentActivityName="com.example.firstandroidapp.ShopList" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.firstandroidapp.ShopList" />
+        </activity>
+        <activity
+            android:name="com.example.firstandroidapp.DisplayMessageActivity"
+            android:label="@string/title_activity_display_message"
+            android:parentActivityName="com.example.firstandroidapp.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.firstandroidapp.MainActivity" />
+        </activity>
+        
+        <receiver
+            android:name=".AutoRun"
+            android:enabled="true"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".FoneService" />
+        
+    </application>
+
+</manifest>

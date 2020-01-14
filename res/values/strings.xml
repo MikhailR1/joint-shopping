@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Совместные покупки</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello worlddd!</string>
+    <string name="gdb">Введите дату:</string>
+    <string name="edit_message">Enter a message</string>
+    <string name="button_send">Send</string>
+    <string name="button_read">Прочитать данные</string>
+    <string name="today">За сегодня</string>
+    <string name="button_write">Write</string>
+    <string name="button_test">RStest</string>
+    <string name="button_2">btn2</string>
+    <string name="zero">0</string>
+    <string name="title_activity_display_message">My Message</string>
+    <string name="title_activity_sec">Меню</string>
+    <string name="title_shop_list">Покупки</string>
+    <string name="title_create_shop_list">Создание списка</string>
+    <string name="title_good_info">Информация о покупке</string>
+    <string name="description">description</string>
+
+</resources>

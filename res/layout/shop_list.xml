@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+<LinearLayout
+android:orientation="horizontal"
+android:layout_height="wrap_content"
+android:layout_width="match_parent">
+    
+<TextView 
+ 	android:id="@+id/textViewTextSL1" 
+ 	android:layout_width="wrap_content" 
+ 	android:layout_height="wrap_content" 
+ 	android:text="Название списка: "> 
+	</TextView>    
+    
+<TextView 
+ 	android:id="@+id/textViewSL1" 
+ 	android:layout_width="wrap_content" 
+ 	android:layout_height="wrap_content" 
+ 	android:text=" "> 
+	</TextView>
+	
+</LinearLayout>
+	
+<LinearLayout
+android:orientation="horizontal"
+android:layout_height="wrap_content"
+android:layout_width="match_parent">
+
+    <TextView 
+ 	android:id="@+id/textViewTextSL2" 
+ 	android:layout_width="wrap_content" 
+ 	android:layout_height="wrap_content" 
+ 	android:text="ID списка: "> 
+	</TextView>
+    
+    <TextView 
+ 	android:id="@+id/textViewSL2" 
+ 	android:layout_width="wrap_content" 
+ 	android:layout_height="wrap_content" 
+ 	android:text=" "> 
+	</TextView>
+
+    
+</LinearLayout>
+
+<LinearLayout
+android:orientation="horizontal"
+android:layout_height="wrap_content"
+android:layout_width="match_parent">
+
+    <TextView 
+ 	android:id="@+id/textViewTextSL3" 
+ 	android:layout_width="wrap_content" 
+ 	android:layout_height="wrap_content" 
+ 	android:text="Дата создания: "> 
+	</TextView>
+    
+    <TextView 
+ 	android:id="@+id/textViewSL3" 
+ 	android:layout_width="wrap_content" 
+ 	android:layout_height="wrap_content" 
+ 	android:text=" "> 
+	</TextView>
+
+    
+</LinearLayout>
+
+<LinearLayout
+android:orientation="horizontal"
+android:layout_height="wrap_content"
+android:layout_width="match_parent">
+
+    <TextView 
+ 	android:id="@+id/textViewTextSL4" 
+ 	android:layout_width="wrap_content" 
+ 	android:layout_height="wrap_content" 
+ 	android:text="Кем создан: "> 
+	</TextView>
+    
+    <TextView 
+ 	android:id="@+id/textViewSL4" 
+ 	android:layout_width="wrap_content" 
+ 	android:layout_height="wrap_content" 
+ 	android:text=" "> 
+	</TextView>
+
+    
+</LinearLayout>
+
+<LinearLayout
+android:orientation="horizontal"
+android:layout_height="wrap_content"
+android:layout_width="match_parent">
+
+    <TextView 
+ 	android:id="@+id/textViewTextSL5" 
+ 	android:layout_width="wrap_content" 
+ 	android:layout_height="wrap_content" 
+ 	android:text="Версия: "> 
+	</TextView>
+    
+    <TextView 
+ 	android:id="@+id/textViewSL5" 
+ 	android:layout_width="wrap_content" 
+ 	android:layout_height="wrap_content" 
+ 	android:text=" "> 
+	</TextView>
+
+    
+</LinearLayout>
+
+<LinearLayout
+android:orientation="horizontal"
+android:layout_height="wrap_content"
+android:layout_width="match_parent">
+
+<Button
+android:id="@+id/del_bt"
+android:layout_width="wrap_content"
+android:layout_height="15pt"
+android:layout_weight="0"
+android:text="Удалить список"
+android:onClick="deleting"/>
+
+</LinearLayout>
+
+<LinearLayout
+android:orientation="horizontal"
+android:layout_height="wrap_content"
+android:layout_width="match_parent">
+
+<Button
+android:id="@+id/add_bt"
+android:layout_width="wrap_content"
+android:layout_height="15pt"
+android:layout_weight="0"
+android:text="Добавить:"
+android:onClick="adding"/>
+
+<EditText
+android:id="@+id/good_add"
+android:layout_height="15pt"
+android:layout_width="50pt"
+android:hint="Покупка"/>
+
+</LinearLayout>
+
+<LinearLayout
+android:orientation="horizontal"
+android:layout_height="wrap_content"
+android:layout_width="match_parent">
+
+<ListView
+        android:id="@+id/listViewGoods"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </ListView>
+
+</LinearLayout>
+    
+
+</LinearLayout>

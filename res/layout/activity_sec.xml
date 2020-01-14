@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+<TextView 
+ 	android:id="@+id/textView1" 
+ 	android:layout_width="wrap_content" 
+ 	android:layout_height="wrap_content" 
+ 	android:text=" "> 
+	</TextView>
+
+<LinearLayout
+android:orientation="horizontal"
+android:layout_height="wrap_content"
+android:layout_width="match_parent">
+
+<Button
+android:id="@+id/create_bt"
+android:layout_width="wrap_content"
+android:layout_height="18pt"
+android:layout_weight="0"
+android:text="Создать список покупок"
+android:onClick="creating"/>
+
+</LinearLayout>
+
+<LinearLayout
+android:orientation="horizontal"
+android:layout_height="wrap_content"
+android:layout_width="match_parent">
+
+<Button
+android:id="@+id/edit_bt"
+android:layout_width="wrap_content"
+android:layout_height="18pt"
+android:layout_weight="0"
+android:text="Редактирровать список покупок"
+android:onClick="editing"/>
+
+</LinearLayout>
+
+<LinearLayout
+android:orientation="horizontal"
+android:layout_height="wrap_content"
+android:layout_width="match_parent">
+
+<TextView 
+ 	android:id="@+id/textDebug" 
+ 	android:layout_width="wrap_content" 
+ 	android:layout_height="wrap_content" 
+ 	android:text=" "> 
+	</TextView>
+
+</LinearLayout>
+
+<LinearLayout
+android:orientation="horizontal"
+android:layout_height="wrap_content"
+android:layout_width="match_parent">
+
+<ListView
+        android:id="@+id/listViewShoppingList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </ListView>
+
+</LinearLayout>
+
+</LinearLayout>
